@@ -7,7 +7,7 @@ import json
 # PLEASE NOTE: the token credentials file must be named: environment.xlsx
 
 def PreferencesResourceList():
-    excel_file = 'CIMBALI_POC_Migr.xlsx'
+    excel_file = 'CreateServiceRequest_Preference.xlsx'
     df = pd.read_excel(excel_file)
     df = df.fillna('')
     df = df.drop('API ROW', axis=1)
